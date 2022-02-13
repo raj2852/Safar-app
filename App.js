@@ -65,7 +65,7 @@ class Home extends Component{
             to "What package to expect", we have got all your answers
             covered.Safar is a statewise search destination planner, so if you
             just know the place and not the state please use our "Help Me Search
-            My state" feature available after you click on the "Explore" button.
+            My state" feature available under the "Explore" section.
             We seldom visit just a 'particular' place;rather we tend to visit all
             the nearby sites.So we have categorized all the sites, into either
             "Most Important" or "Somewhat important",in case you are a busy

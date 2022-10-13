@@ -3,6 +3,7 @@ import {View, Text, ScrollView, Dimensions, FlatList} from 'react-native';
 import {Navigation} from 'react-native-navigation';
 import {ContentBox, MapView} from '../../components/Explore';
 import images from '../../assets/images';
+import colors from '../../assets/colors';
 
 const Explore = props => {
   const placesData = [
@@ -211,5 +212,17 @@ Navigation.setDefaultOptions({
     },
   },
 });
+
+Explore.options = {
+  topBar: {
+    title: {
+      text: 'Explore',
+      color: 'white',
+    },
+    background: {
+      color: colors.statusColor,
+    },
+  },
+};
 
 export default Explore;

@@ -9,9 +9,10 @@ import {
   FlatList,
   SafeAreaView,
 } from 'react-native';
-import {Header} from '../../components/Shared';
+import {StateCard} from '../../components/Shared';
 import styles from '../../assets/styles';
 import images from '../../assets/images';
+import colors from '../../assets/colors';
 //import LinearGradient from 'react-native-linear-gradient';
 
 const Kashmir = () => {
@@ -19,22 +20,100 @@ const Kashmir = () => {
     {
       place: 'SRINAGAR – Heaven On Earth',
     },
+    {
+      place: 'GULMARG – Ski Your Way',
+    },
+    {
+      place: 'SONAMARG – The Land Of Gold',
+    },
+    {
+      place: 'LEH – 3 Idiot’s Location',
+    },
+    {
+      place: 'KUPWARA – The Delight Of Kashmir',
+    },
+    {
+      place: 'KARGIL – A Witness Of Many Wars',
+    },
+    {
+      place: 'PULWAMA – All About Natural Springs & Apple Orchards',
+    },
+    {
+      place: 'PAHALGRAM – Get Allured By Picturesque Views',
+    },
+    {
+      place: 'JAMMU CITY – The City Of Beauty',
+    },
+    {
+      place: 'SHALIMAR GARDEN – Photographer’s Paradise',
+    },
+    {
+      place: 'JAMA MASJID – Marvel At The Intricate Architecture',
+    },
+    {
+      place: 'VAISHNO DEVI – Heaven For Pilgrims',
+    },
+    {
+      place: 'AMARNATH – Marvel At The Natural Occurences',
+    },
+    {
+      place: 'DACHIGAM NATIONAL PARK -Flora & Fauna',
+    },
   ];
 
   const unimportant = [
     {
       place: 'KATHUA – Lesser-Known Gem',
     },
+    {
+      place: 'HEMIS – The Famous Snow Leopard Capital',
+    },
+    {
+      place: 'KISHTWAR – Animal Lover’s Paradise',
+    },
+    {
+      place: 'DODA – Mini Kashmir',
+    },
+    {
+      place: 'POONCH – Offbeat Location',
+    },
+    {
+      place: 'ANANTNAG – Home To Temples',
+    },
+    {
+      place: 'NISHAT GARDEN – Perfect For A Laid-Back Day',
+    },
+    {
+      place: 'CHASHMASHAHI – One Of The Mughal Gardens',
+    },
+    {
+      place: 'YOUSMARG – Sit In Tranquility',
+    },
+    {
+      place: 'PATNITOP – Picture-Perfect Paradise',
+    },
+    {
+      place: 'ARU VALLEY – Perfect Place To Unwind',
+    },
+    {
+      place: 'SANASAR – Ideal For Adventure Junkies',
+    },
+    {
+      place: 'KHILANMARG – Paradise for skiing',
+    },
+    {
+      place: 'BALTAL – For picturesque landscapes',
+    },
+    {
+      place: 'BHADERWAH – For stunning vistas',
+    },
+    {
+      place: 'KISHTWAR NATIONAL PARK – For Musk Deer & Himalayan Bear',
+    },
   ];
 
   return (
-    <View style={styles.screen}>
-      <Header
-        imglink={
-          'https://www.google.com/search?q=kashmir+tourism&sxsrf=ACYBGNQUkY6HCQJCPkraPhEU4zmRXHBWbQ:1579174665455&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiI6-OHhIjnAhX7yjgGHfEKCZkQ_AUoAnoECBIQBA'
-        }
-        link={'http://www.jktourism.jk.gov.in/'}
-      />
+    <View style={[styles.screen, {marginBottom: 4}]}>
       <ScrollView>
         <View style={styles.screen}>
           <ImageBackground source={images.kashbanner}>
@@ -70,47 +149,99 @@ const Kashmir = () => {
           </View>
           <Image source={images.kash3} style={styles.img} />
           <View style={styles.places}>
-            <Text style={styles.h3}>#Must visit places</Text>
-            <Text style={styles.details}>
+            <Text style={[styles.h3,{marginBottom:6}]}>#Must visit places</Text>
+            
               <SafeAreaView>
                 <FlatList
                   data={mustvisit}
                   renderItem={({item}) => {
                     return (
-                      <Text>
-                        <View style={styles.dot1} />
-                        <Text style={styles.placesitem}> {item.place}</Text>
-                      </Text>
+                      <SafeAreaView>
+                        <Text>
+                          <View style={styles.dot1} />
+                          <Text style={styles.placesitem}> {item.place}</Text>
+                        </Text>
+                      </SafeAreaView>
                     );
                   }}
                 />
               </SafeAreaView>
-            </Text>
+            
           </View>
           <View style={styles.places}>
-            <Text style={styles.h3}>Not so important</Text>
-            <Text style={styles.details}>
+            <Text style={[styles.h3,{marginBottom:6}]}>Not so important</Text>
+           
               <SafeAreaView>
                 <FlatList
                   data={unimportant}
                   renderItem={({item}) => {
                     return (
-                      <View>
-                        <Text>
+                      <SafeAreaView>
+                        <Text >
                           <View style={styles.dot2} />
                           <Text style={styles.placesitem}> {item.place}</Text>
                         </Text>
-                      </View>
+                      </SafeAreaView>
                     );
                   }}
                 />
               </SafeAreaView>
-            </Text>
+            
           </View>
+                  <Text style={styles.h3}>More...</Text>
+          <ScrollView
+            horizontal={true}
+            showsHorizontalScrollIndicator={false}
+            contentContainerStyle={{
+              alignItems: 'center',
+              width: '150%',
+              justifyContent: 'space-between',
+            }}>
+            <StateCard
+              heading={'Images'}
+              link={
+                'https://www.google.com/search?q=kashmir+tourism&sxsrf=ACYBGNQUkY6HCQJCPkraPhEU4zmRXHBWbQ:1579174665455&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiI6-OHhIjnAhX7yjgGHfEKCZkQ_AUoAnoECBIQBA'
+              }
+              linkdesc={'Kashmir and leh-ladakh images'}
+              description={
+                'Find out the images of these places from extensive gallery.'
+              }
+            />
+            <StateCard
+              heading={'Kashmir tourism official website'}
+              link={'http://www.jktourism.jk.gov.in/'}
+              linkdesc={'Official Kashmir tourism site'}
+              description={
+                'Learn about the latest developments in the state from the official tourism website and plan your trip accordingly.'
+              }
+            />
+            <StateCard
+              heading={'Leh-Ladakh tourism official website'}
+              link={'https://leh.nic.in/tourism/tourist-info/'}
+              linkdesc={'Official Leh-Ladakh tourism site'}
+              description={
+                'Learn about the latest developments in the state from the official tourism website and plan your trip accordingly.'
+              }
+            />
+          </ScrollView>
         </View>
       </ScrollView>
     </View>
   );
+};
+
+Kashmir.options = {
+  topBar: {
+    title: {
+      text: 'Kashmir - a state from the north',
+      color: 'white',
+      fontSize: 20,
+      fontWeight: '500',
+    },
+    background: {
+      color: colors.statusColor,
+    },
+  },
 };
 
 export default Kashmir;

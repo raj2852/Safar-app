@@ -162,7 +162,8 @@ const styles = StyleSheet.create({
   },
   places: {
     height: 'auto',
-    width: Dimensions.get('screen').width - 10,
+    width: Dimensions.get('screen').width - 20,
+    marginBottom: 6
   },
   placesitem: {
     textAlign: 'left',

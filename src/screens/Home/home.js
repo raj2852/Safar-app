@@ -89,4 +89,16 @@ class Home extends Component {
   }
 }
 
+Home.options = {
+  topBar: {
+    title: {
+      text: 'Home',
+      color: 'white',
+    },
+    background: {
+      color: colors.statusColor,
+    },
+  },
+};
+
 export default Home;

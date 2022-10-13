@@ -7,6 +7,7 @@ import {
   Dimensions,
   TextInput,
 } from 'react-native';
+import colors from '../../assets/colors';
 
 class Contact extends Component {
   render() {
@@ -52,5 +53,17 @@ const contactStyle = StyleSheet.create({
     padding: 10,
   },
 });
+
+Contact.options = {
+  topBar: {
+    title: {
+      text: 'Contact Us',
+      color: 'white',
+    },
+    background: {
+      color: colors.statusColor,
+    },
+  },
+};
 
 export default Contact;

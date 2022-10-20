@@ -9,9 +9,10 @@ import {
   FlatList,
   SafeAreaView
 } from 'react-native';
-import {Header} from '../../components/Shared';
+import {StateCard} from '../../components/Shared';
 import styles from '../../assets/styles';
 import images from '../../assets/images';
+import colors from '../../assets/colors';
 
 //import LinearGradient from 'react-native-linear-gradient';
 
@@ -29,8 +30,7 @@ const unimportant = [
 ];
 
   return (
-    <View style={styles.screen}>
-      <Header />
+    <View style={[styles.screen, {marginBottom: 4}]}>
       <ScrollView>
         <View style={styles.screen}>
           <ImageBackground source={images.karbanner}>
@@ -47,47 +47,89 @@ const unimportant = [
           </View>
           <Image source={images.kar3} style={styles.img} />
           <View style={styles.places}>
-            <Text style={styles.h3}>#Must visit places</Text>
-            <Text style={styles.details}>
-              <SafeAreaView>
+            <Text style={[styles.h3, {marginBottom: 6}]}>
+              #Must visit places
+            </Text>
+
+            <SafeAreaView>
               <FlatList
                 data={mustvisit}
                 renderItem={({item}) => {
                   return (
-                    <Text>  
+                    <SafeAreaView>
+                      <Text>
                         <View style={styles.dot1} />
-                        <Text style={styles.placesitem}>  {item.place}</Text>
-                    </Text>
+                        <Text style={styles.placesitem}> {item.place}</Text>
+                      </Text>
+                    </SafeAreaView>
                   );
                 }}
               />
-              </SafeAreaView>
-            </Text>
+            </SafeAreaView>
           </View>
           <View style={styles.places}>
-            <Text style={styles.h3}>Not so important</Text>
-            <Text style={styles.details}>
-              <SafeAreaView>
-            <FlatList
+            <Text style={[styles.h3, {marginBottom: 6}]}>Not so important</Text>
+
+            <SafeAreaView>
+              <FlatList
                 data={unimportant}
                 renderItem={({item}) => {
                   return (
-                    <View>
+                    <SafeAreaView>
                       <Text>
                         <View style={styles.dot2} />
-                        <Text style={styles.placesitem}>  {item.place}</Text>
+                        <Text style={styles.placesitem}> {item.place}</Text>
                       </Text>
-                    </View>
+                    </SafeAreaView>
                   );
                 }}
               />
-              </SafeAreaView>
-              </Text>
+            </SafeAreaView>
           </View>
+          <Text style={styles.h3}>More...</Text>
+          <ScrollView
+            horizontal={true}
+            showsHorizontalScrollIndicator={false}
+            contentContainerStyle={{
+              alignItems: 'center',
+              width: '100%',
+              justifyContent: 'space-between',
+            }}>
+            <StateCard
+              heading={'Images'}
+              link={''}
+              linkdesc={'Karnataka Images'}
+              description={
+                'Find out the images of these places from extensive gallery.'
+              }
+            />
+            <StateCard
+              heading={'karnataka tourism official website'}
+              link={''}
+              linkdesc={'Official karnataka tourism website'}
+              description={
+                'Learn about the latest developments in the state from the official tourism website and plan your trip accordingly.'
+              }
+            />
+          </ScrollView>
         </View>
       </ScrollView>
     </View>
   );
+};
+
+Karnataka.options = {
+  topBar: {
+    title: {
+      text: 'Karnataka',
+      color: 'white',
+      fontSize: 20,
+      fontWeight: '500',
+    },
+    background: {
+      color: colors.statusColor,
+    },
+  },
 };
 
 export default Karnataka;

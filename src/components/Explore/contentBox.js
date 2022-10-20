@@ -24,15 +24,19 @@ const ContentBox =({bgImage,label,onPress}) => {
           borderWidth: 3,
           borderColor: '#fff',
         }}>
-        <ImageBackground
-          source={bgImage}
-          resizeMode="cover"
-          style={{flex: 1}}>
-          <Text style={(styles.exploretext, {fontSize: 24, color: '#fff'})}>
+        <ImageBackground source={bgImage} resizeMode="cover" style={{flex: 1}}>
+          <Text
+            style={
+              (styles.exploretext,
+              {fontSize: 24, color: '#fff', backgroundColor: 'rgba(0,0,0,0.6)'})
+            }>
             {label}
           </Text>
           <Text
-            style={(styles.explorelink, {fontSize: 18, color: '#fff'})}
+            style={
+              (styles.explorelink,
+              {fontSize: 18, color: '#fff', backgroundColor: 'rgba(0,0,0,0.6)'})
+            }
             onPress={onPress}>
             Visit
           </Text>

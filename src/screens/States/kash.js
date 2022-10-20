@@ -149,52 +149,52 @@ const Kashmir = () => {
           </View>
           <Image source={images.kash3} style={styles.img} />
           <View style={styles.places}>
-            <Text style={[styles.h3,{marginBottom:6}]}>#Must visit places</Text>
-            
-              <SafeAreaView>
-                <FlatList
-                  data={mustvisit}
-                  renderItem={({item}) => {
-                    return (
-                      <SafeAreaView>
-                        <Text>
-                          <View style={styles.dot1} />
-                          <Text style={styles.placesitem}> {item.place}</Text>
-                        </Text>
-                      </SafeAreaView>
-                    );
-                  }}
-                />
-              </SafeAreaView>
-            
+            <Text style={[styles.h3, {marginBottom: 6}]}>
+              #Must visit places
+            </Text>
+
+            <SafeAreaView>
+              <FlatList
+                data={mustvisit}
+                renderItem={({item}) => {
+                  return (
+                    <SafeAreaView>
+                      <Text>
+                        <View style={styles.dot1} />
+                        <Text style={styles.placesitem}> {item.place}</Text>
+                      </Text>
+                    </SafeAreaView>
+                  );
+                }}
+              />
+            </SafeAreaView>
           </View>
           <View style={styles.places}>
-            <Text style={[styles.h3,{marginBottom:6}]}>Not so important</Text>
-           
-              <SafeAreaView>
-                <FlatList
-                  data={unimportant}
-                  renderItem={({item}) => {
-                    return (
-                      <SafeAreaView>
-                        <Text >
-                          <View style={styles.dot2} />
-                          <Text style={styles.placesitem}> {item.place}</Text>
-                        </Text>
-                      </SafeAreaView>
-                    );
-                  }}
-                />
-              </SafeAreaView>
-            
+            <Text style={[styles.h3, {marginBottom: 6}]}>Not so important</Text>
+
+            <SafeAreaView>
+              <FlatList
+                data={unimportant}
+                renderItem={({item}) => {
+                  return (
+                    <SafeAreaView>
+                      <Text>
+                        <View style={styles.dot2} />
+                        <Text style={styles.placesitem}> {item.place}</Text>
+                      </Text>
+                    </SafeAreaView>
+                  );
+                }}
+              />
+            </SafeAreaView>
           </View>
-                  <Text style={styles.h3}>More...</Text>
+          <Text style={styles.h3}>More...</Text>
           <ScrollView
             horizontal={true}
             showsHorizontalScrollIndicator={false}
             contentContainerStyle={{
               alignItems: 'center',
-              width: '150%',
+              width: '180%',
               justifyContent: 'space-between',
             }}>
             <StateCard
@@ -203,6 +203,14 @@ const Kashmir = () => {
                 'https://www.google.com/search?q=kashmir+tourism&sxsrf=ACYBGNQUkY6HCQJCPkraPhEU4zmRXHBWbQ:1579174665455&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiI6-OHhIjnAhX7yjgGHfEKCZkQ_AUoAnoECBIQBA'
               }
               linkdesc={'Kashmir and leh-ladakh images'}
+              description={
+                'Find out the images of these places from extensive gallery.'
+              }
+            />
+            <StateCard
+              heading={'Images'}
+              link={''}
+              linkdesc={'Leh-ladakh images'}
               description={
                 'Find out the images of these places from extensive gallery.'
               }
@@ -233,7 +241,7 @@ const Kashmir = () => {
 Kashmir.options = {
   topBar: {
     title: {
-      text: 'Kashmir - a state from the north',
+      text: 'Kashmir',
       color: 'white',
       fontSize: 20,
       fontWeight: '500',

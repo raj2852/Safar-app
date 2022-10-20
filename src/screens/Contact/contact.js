@@ -6,11 +6,53 @@ import {
   Button,
   Dimensions,
   TextInput,
+  ToastAndroid
 } from 'react-native';
 import colors from '../../assets/colors';
+import {sendGridEmail} from 'react-native-sendgrid';
+import { api_key } from '../../assets/api';
 
 class Contact extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      email: '',
+      body: '',
+      user: '',
+      message: false
+    };
+  }
+  updateTextInput = name => text => {
+    this.setState({[name]: text});
+  };
+  sendmail(){
+    const {email,body,user} = this.state;
+    const SENDGRIDAPIKEY = api_key;
+    const FROMEMAIL = email;
+    const TOMEMAIL = 'service.rajprojects@gmail.com';
+    const SUBJECT = `${user}'s message from safar app`;
+    const BODY = body;
+    try{
+      if(user==""||email==""||body==""){
+        ToastAndroid.show("Please enter your name and email and a valid message",1);
+      }
+      else{
+        const sendRequest = sendGridEmail(SENDGRIDAPIKEY,TOMEMAIL,FROMEMAIL,SUBJECT,BODY);
+        sendRequest.then((response) => {
+	            console.log("Success");
+              ToastAndroid.show("Your email is sent",1);
+              this.setState({message:true});
+	        }).catch((error) =>{
+	            console.log(error);
+	        });
+	      }
+      }
+    catch(e){
+      console.log(e);
+    }
+  }
   render() {
+    const {user,email,body,message} = this.state;
     return (
       <SafeAreaView style={contactStyle.screen}>
         <Text style={{fontSize: 24, marginBottom: 20}}>
@@ -18,16 +60,34 @@ class Contact extends Component {
           below and we will reach to you as soon as possible
         </Text>
         <TextInput
+          value={user}
+          placeholder="your name"
+          style={contactStyle.input}
+          onChangeText={value => this.setState({user: value})}
+        />
+        <TextInput
+          value={email}
           placeholder="your email"
-          style={contactStyle.input}></TextInput>
+          style={contactStyle.input}
+          onChangeText={value => this.setState({email: value})}
+        />
         <TextInput
           multiline
+          value={body}
           placeholder="Enter Message here..."
-          style={[contactStyle.input, {height: 150}]}></TextInput>
+          style={[contactStyle.input, {height: 150}]}
+          onChangeText={value => this.setState({body: value})}></TextInput>
         <Button
           title="Send Message"
           style={contactStyle.btn}
-          color={'green'}></Button>
+          color={'green'}
+          onPress={() => this.sendmail()}></Button>
+        {message && (
+          <Text style={{color: '#fff', fontSize: 24}}>
+            Your message has been received by us! Expect reply within next 2
+            working days.
+          </Text>
+        )}
       </SafeAreaView>
     );
   }

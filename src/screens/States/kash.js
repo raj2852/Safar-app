@@ -9,7 +9,7 @@ import {
   FlatList,
   SafeAreaView,
 } from 'react-native';
-import {StateCard} from '../../components/Shared';
+import {StateCard,TourDetails} from '../../components/Shared';
 import styles from '../../assets/styles';
 import images from '../../assets/images';
 import colors from '../../assets/colors';
@@ -123,6 +123,12 @@ const Kashmir = () => {
           </ImageBackground>
           <Text style={styles.h2}>Map</Text>
           <Image source={images.kashmap} style={styles.map} />
+          <TourDetails 
+          duration={"5 nights and 6 days"}
+          cost={"25000 to 30000"}
+          months={"Summers(Actually 3 seasons) - Spring(March - early May),Summer(early May - late August),Autumn(September - November)"}
+          route={"Srinagar - Pahalgam - Gulmarg - Sonmarg - Leh - Ladakh - Kupwara"}
+          />
           <Image source={images.kash2} style={styles.img} />
           <View style={styles.about}>
             <Text style={styles.h3}>About Kashmir</Text>
@@ -194,7 +200,7 @@ const Kashmir = () => {
             showsHorizontalScrollIndicator={false}
             contentContainerStyle={{
               alignItems: 'center',
-              width: '180%',
+              width: '220%',
               justifyContent: 'space-between',
             }}>
             <StateCard
@@ -202,7 +208,7 @@ const Kashmir = () => {
               link={
                 'https://www.google.com/search?q=kashmir+tourism&sxsrf=ACYBGNQUkY6HCQJCPkraPhEU4zmRXHBWbQ:1579174665455&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiI6-OHhIjnAhX7yjgGHfEKCZkQ_AUoAnoECBIQBA'
               }
-              linkdesc={'Kashmir and leh-ladakh images'}
+              linkdesc={'Kashmir images'}
               description={
                 'Find out the images of these places from extensive gallery.'
               }

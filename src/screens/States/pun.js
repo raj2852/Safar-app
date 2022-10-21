@@ -9,7 +9,7 @@ import {
   FlatList,
   SafeAreaView
 } from 'react-native';
-import {StateCard} from '../../components/Shared';
+import {StateCard,TourDetails} from '../../components/Shared';
 import styles from '../../assets/styles';
 import images from '../../assets/images';
 import colors from '../../assets/colors';
@@ -19,14 +19,177 @@ import colors from '../../assets/colors';
 const Punjab = () => {
   const mustvisit = [
     {
-      place: "",
+      place: 'Golden Temple - Amritsar',
+    },
+    {
+      place: 'jallianwala bagh - Amritsar',
+    },
+    {
+      place: 'Akal takht - Amritsar',
+    },
+    {
+      place: 'Wagah border - Amritsar',
+    },
+    {
+      place: 'Summer palace of maharaja Ranjit Singh',
+    },
+    {
+      place: 'The rock garden - Chandigarh',
+    },
+    {
+      place: 'Government museum and art gallery - Chandigarh',
+    },
+    {
+      place: 'Timber trail - Chandigarh',
+    },
+    {
+      place: 'Butterfly park - Chandigarh',
+    },
+    {
+      place: 'Yadvinder garden - Chandigarh',
+    },
+    {
+      place: 'Garden of fragnance - Chandigarh',
+    },
+    {
+      place: 'Chandigarh botanical garden and nature park - Chandigarh',
+    },
+    {
+      place: 'Shanti kunj - Chandigarh',
+    },
+    {
+      place: 'Morni hills - Chandigarh',
+    },
+    {
+      place: 'Terraced garden - Chandigarh',
+    },
+    {
+      place: 'International dolls museum - Chandigarh',
+    },
+    {
+      place: 'Imam Nasir masjid - Jalandhar',
+    },
+    {
+      place: 'Shahed-e-azam Sardar Bhagat Singh museum - Jalandhar',
+    },
+    {
+      place: 'Wonderland theme park - Jalandhar',
+    },
+    {
+      place: 'Devi talab mandir - Jalandhar',
+    },
+    {
+      place: 'St. Mary Cathedral church - Jalandhar',
+    },
+    {
+      place: 'Lodhi fort - Ludhiana',
+    },
+    {
+      place: 'Rural heritage museum - Ludhiana',
+    },
+    {
+      place: 'Tiger zoo - Ludhiana',
+    },
+    {
+      place: 'Maharaja Ranjit Singh war museum - Ludhiana',
+    },
+    {
+      place: '',
     },
   ];
 
 const unimportant = [
   {
-    place: "",
+    place: 'Tara Taran Sahib - Amritsar',
   },
+  {
+    place: 'Maharaja ranjit Singh panorama - Amritsar',
+  },
+  {
+    place: 'maharaja Ranjit Singh museum - Ammritsar',
+  },
+  {
+    place: 'Rambagh garden - Amritsar',
+  },
+  {
+    place: 'Harike wetland and bird sanctuary - Amritsar',
+  },
+  {
+    place: 'Khalsa college - Amritsar',
+  },
+  {
+    place: 'Durgiana temple - Amritsar',
+  },
+  {
+    place: 'Bathinder fort -  Amritsar',
+  },
+  {
+    place: 'kaiser bagh park -  Amritsar',
+  },
+  {
+    place: 'Sukhna lake - Chandigarh',
+  },
+  {
+    place: 'Chhatbir zoo - Chandigarh',
+  },
+  {
+    place: 'Rose garden - Chandigarh',
+  },
+  {
+    place: 'Le corbusier center - Chandigarh',
+  },
+  {
+    place: 'Sankaria cactus garden - Chandigarh',
+  },
+  {
+    place: 'Mahendra chaudhury garden and leisure park - Chandigarh',
+  },
+  {
+    place: 'Leisure park - Chandigarh',
+  },
+  {
+    place: 'Tuldi mandir - Jalandhar',
+  },
+  {
+    place: 'Shiv mandir - Jalandhar',
+  },
+  {
+    place: 'Pushpa gujral Science city - Jalandhar',
+  },
+  {
+    place: 'Company bagh - Jalandhar',
+  },
+  {
+    place: 'Niku Park - jalandhar',
+  },
+  {
+    place: 'Rangla punjab haveli - Jalandhar',
+  },
+  {
+    place: 'Prithvi planet - Jalandhar',
+  },
+  {
+    place: 'Sheetal mandir - Jalandhar',
+  },  
+  {
+    place: 'Gurudwara charn kamal - Ludhiana',
+  },
+  {
+    place: 'Phillaur fort - Ludhiana',
+  },
+  {
+    place: 'Nehru rose garden - Ludhiana',
+  },
+  {
+    place: 'Deer park - Ludhiana',
+  },
+  {
+    place: '',
+  },
+  {
+    place: '',
+  },
+  
 ];
 
   return (
@@ -92,7 +255,7 @@ const unimportant = [
             showsHorizontalScrollIndicator={false}
             contentContainerStyle={{
               alignItems: 'center',
-              width: '120%',
+              width: '100%',
               justifyContent: 'space-between',
             }}>
             <StateCard

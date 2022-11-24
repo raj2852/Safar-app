@@ -123,11 +123,15 @@ const Kashmir = () => {
           </ImageBackground>
           <Text style={styles.h2}>Map</Text>
           <Image source={images.kashmap} style={styles.map} />
-          <TourDetails 
-          duration={"5 nights and 6 days"}
-          cost={"25000 to 30000"}
-          months={"Summers(Actually 3 seasons) - Spring(March - early May),Summer(early May - late August),Autumn(September - November)"}
-          route={"Srinagar - Pahalgam - Gulmarg - Sonmarg - Leh - Ladakh - Kupwara"}
+          <TourDetails
+            duration={'5 nights and 6 days'}
+            cost={'25000 to 30000'}
+            months={
+              'Summers(Actually 3 seasons) - Spring(March - early May),Summer(early May - late August),Autumn(September - November)'
+            }
+            route={
+              'Srinagar - Pahalgam - Gulmarg - Sonmarg - Leh - Ladakh - Kupwara'
+            }
           />
           <Image source={images.kash2} style={styles.img} />
           <View style={styles.about}>
@@ -215,7 +219,9 @@ const Kashmir = () => {
             />
             <StateCard
               heading={'Images'}
-              link={''}
+              link={
+                'https://www.google.com/search?q=leh+ladakh+tourism&rlz=1C1CHBF_enIN1001IN1002&sxsrf=ALiCzsaAve--nuwvksuk5wZWkoMj6kJl-A:1666677175465&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiqsf6n2Pr6AhUGSGwGHbVlD1cQ_AUoAXoECAIQAw&biw=1366&bih=657&dpr=1'
+              }
               linkdesc={'Leh-ladakh images'}
               description={
                 'Find out the images of these places from extensive gallery.'

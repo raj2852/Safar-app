@@ -9,7 +9,7 @@ import {
   FlatList,
   SafeAreaView
 } from 'react-native';
-import {StateCard} from '../../components/Shared';
+import {StateCard,TourDetails} from '../../components/Shared';
 import styles from '../../assets/styles';
 import images from '../../assets/images';
 import colors from '../../assets/colors';
@@ -19,13 +19,82 @@ import colors from '../../assets/colors';
 const Telen = () => {
   const mustvisit = [
     {
-      place: "",
+      place: 'Hyderabad - new york city of south India',
+    },
+    {
+      place: 'Papikondalu - lake amongst hills and valleys',
+    },
+    {
+      place: 'Bhandrachala - historic events of the epic Ramayana',
+    },
+    {
+      place: 'Adilabad - sound of gurgling waterfalls,gentle cool breeeze',
+    },
+    {
+      place: 'Nizamabad - rich heritage site',
+    },
+    {
+      place: 'Secunderabad - twin city of hyderabad',
+    },
+    {
+      place: 'Kanakai waterfalls',
+    },
+    {
+      place: 'Gayatri waterfalls',
+    },
+    {
+      place: 'Mallela theertham - brimming waterfall surrounded by lushgreen scenery',
+    },
+    {
+      place: 'Mrugavani national park - famous for peacocks',
+    },
+    {
+      place: 'Nelakondapalli - cultural, religious and historical exploration',
+    },
+    {
+      place: 'Laknavaram cheruvu',
+    },
+    {
+      place: 'Medak cathedral - church in the gothic revival style',
     },
   ];
 
 const unimportant = [
   {
-    place: "",
+    place: 'Nalgonda - deep routed rich history and culture',
+  },
+  {
+    place: 'Khammam - forts',
+  },
+  {
+    place: 'Karimnagar - Islamic architecture',
+  },
+  {
+    place: 'Chilkur balaji temple',
+  },
+  {
+    place: 'KBR national park',
+  },
+  {
+    place: 'Kinnerasani wildlife sanctuary',
+  },
+  {
+    place: 'Bogatha falls',
+  },
+  {
+    place: 'Vemulawada - numerous remarkable temples',
+  },
+  {
+    place: 'Mahbubnagar - famous for the forts',
+  },
+  {
+    place: 'Medak fort - architectural masterpiece of bygone era',
+  },
+  {
+    place: 'Rachakonda fort',
+  },
+  {
+    place: 'Katilinga - hindu pilgrimage site',
   },
 ];
 
@@ -40,10 +109,22 @@ const unimportant = [
           </ImageBackground>
           <Text style={styles.h2}>Map</Text>
           <Image source={images.telmap} style={styles.map} />
+          <TourDetails
+          duration={'5 nights and 6 days'}
+          cost={'Within 14,000'}
+          months={'Winter months from december to mid-march'}
+          route={'Nizamabad - Kamareddy - Hyderabad - Mahbubnagar - Nagarkurnool - Mahabubabad - Warangal'}/>
           <Image source={images.tel2} style={styles.img} />
           <View style={styles.about}>
             <Text style={styles.h3}>About Telengana</Text>
-            <Text style={styles.details}></Text>
+            <Text style={styles.details}>
+              Telangana State Tourism Development Corporation (TSTDC) is a state
+              government agency which promotes tourism in Telangana, a state in
+              the Southern region of India. Retired Director General of Police
+              Pervaram Ramulu appointed as First chairman of Telangana State
+              Tourism. Tourist attractions in Telangana include historical
+              places, monuments, forts, water falls, forests and temples.
+            </Text>
           </View>
           <Image source={images.tel3} style={styles.img} />
           <View style={styles.places}>
@@ -97,7 +178,9 @@ const unimportant = [
             }}>
             <StateCard
               heading={'Images'}
-              link={''}
+              link={
+                'https://www.google.com/search?q=telangana+tourism&sxsrf=ACYBGNQG_PIkC9epvM86EppecFbmx_16ag:1579611486017&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiIjYes35TnAhUyg-YKHQ9EAbsQ_AUoAXoECBAQAw&biw=1366&bih=625'
+              }
               linkdesc={'Telengana images'}
               description={
                 'Find out the images of these places from extensive gallery.'
@@ -105,7 +188,7 @@ const unimportant = [
             />
             <StateCard
               heading={'Telengana tourism official website'}
-              link={''}
+              link={'https://www.telanganatourism.gov.in/'}
               linkdesc={'Official telengana tourism website'}
               description={
                 'Learn about the latest developments in the state from the official tourism website and plan your trip accordingly.'

@@ -1,6 +1,4 @@
 import {Navigation} from 'react-native-navigation';
-
-import Splash from './Splash';
 import {Home} from './Home';
 import {Explore} from './Explore';
 import {Contact} from './Contact';
@@ -36,7 +34,6 @@ import {
 } from './States';
 
 export const registerScreen = async () => {
-  Navigation.registerComponent('Splash', () => Splash);
   Navigation.registerComponent('Home', () => Home);
   Navigation.registerComponent('Explore', () => Explore);
   Navigation.registerComponent('Contact', () => Contact);

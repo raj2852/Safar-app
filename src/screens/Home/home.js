@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Splash from '../Splash';
 import images from '../../assets/images';
 import styles from '../../assets/styles';
 import colors from '../../assets/colors';

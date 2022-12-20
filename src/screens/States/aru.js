@@ -9,7 +9,7 @@ import {
   FlatList,
   SafeAreaView
 } from 'react-native';
-import {StateCard} from '../../components/Shared';
+import {StateCard, TourDetails} from '../../components/Shared';
 import styles from '../../assets/styles';
 import images from '../../assets/images';
 import colors from '../../assets/colors';
@@ -19,13 +19,64 @@ import colors from '../../assets/colors';
 const Aru = () => {
   const mustvisit = [
     {
-      place: "",
+      place: "Tawang - beautiful monastries and birthplace of Dalai lama",
+    },
+    {
+      place: "Ziro - offbeat destnation home to the apatani tribe famous for the pine hills",
+    },
+    {
+      place: "Bhalukpong - nature lover's paradise and adventure spot",
+    },
+    {
+      place: "Roing - snow peaked mountains and turbulent rivers cascading down the hills",
+    },
+    {
+      place: "Itanagar - with the brahmaputra river flowing alongside this place is a nature's paradise",
+    },
+    {
+      place: "Anini - green velvet covered plains",
+    },
+    {
+      place: "Bomdilla - beautiful hilly valeys",
+    },
+    {
+      place: "Tirap - lustrous rivulets with green and vibrant orchids",
+    },
+    {
+      place: "Nuranang falls - largely unknown and virgin place, offering a pristine and beautiful experience",
+    },
+    {
+      place: "Madhuri lake rocky mountains and an ever present lake",
     },
   ];
 
 const unimportant = [
   {
-    place: "",
+    place: "Pasighat",
+  },
+  {
+    place: "Along - mechuka valley with plantation site",
+  },
+  {
+    place: "Daporijo",
+  },
+  {
+    place: "Khonsa - dense forests and deep gorges",
+  },
+  {
+    place: "Changlang - shares international boundary with myanmar",
+  },
+  {
+    place: "Yingkiong - river siang flows besides this district",
+  },
+  {
+    place: "Yupia",
+  },
+  {
+    place: "Sela pass - heavenly gateway",
+  },
+  {
+    place: "Mechuka",
   },
 ];
 
@@ -40,10 +91,15 @@ const unimportant = [
           </ImageBackground>
           <Text style={styles.h2}>Map</Text>
           <Image source={images.arumap} style={styles.map} />
+          <TourDetails
+          duration={'6 nights and 7 days'}
+          cost={'Within 22,000'}
+          months={'October to April are the best months'}
+          route={'Tawang - Kameng - Kurang - Subang - Siang - Dibang - Lohit - Changlang'}/>
           <Image source={images.aru2} style={styles.img} />
           <View style={styles.about}>
             <Text style={styles.h3}>About Andhra Pradesh</Text>
-            <Text style={styles.details}></Text>
+            <Text style={styles.details}>Arunachal Pradesh, literally "land of dawn-lit mountains" is the northeasternmost state of India. It borders the states of Assam and Nagaland to the south. It shares international borders with Bhutan in the west, Myanmar in the east, and China in the north, with which the border is the McMahon Line. Itanagar is the state capital.</Text>
           </View>
           <Image source={images.aru3} style={styles.img} />
           <View style={styles.places}>
@@ -99,7 +155,7 @@ const unimportant = [
             }}>
             <StateCard
               heading={'Images'}
-              link={''}
+              link={'https://www.google.com/search?q=ARUNACHAL+PRADESH+TOURISM&sxsrf=ACYBGNQrbDghzaO2_4peXskGUf1_o9NRdA:1581526018786&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjc4bXEu8znAhXmyzgGHUkyATsQ_AUoAXoECBQQAw&biw=1366&bih=625'}
               linkdesc={'Arunachal Pradesh images'}
               description={
                 'Find out the images of these places from extensive gallery.'
@@ -107,7 +163,7 @@ const unimportant = [
             />
             <StateCard
               heading={'Arunachal Pradesh tourism official website'}
-              link={''}
+              link={'https://arunachaltourism.com/'}
               linkdesc={'Official arunachal pradesh tourism website'}
               description={
                 'Learn about the latest developments in the state from the official tourism website and plan your trip accordingly.'

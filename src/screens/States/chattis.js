@@ -32,8 +32,7 @@ const Chattis = () => {
       place: 'Chitarkoot falls - major ecotourism destinations',
     },
     {
-      place:
-        'Mainpat - underrated hill station with green pastures, deep valleys',
+      place: 'Mainpat - underrated hill station with green pastures, deep valleys',
     },
     {
       place: 'Charre marre waterfalls - refreshing and offbeat place',

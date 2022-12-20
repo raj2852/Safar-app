@@ -119,7 +119,7 @@ const unimportant = [
     place: 'Draksharamam - most powerful and prominent temples of lord shiva',
   },
   {
-    place: 'tadipatri - Ancient temples with relics from centuries',
+    place: 'Tadipatri - Ancient temples with relics from centuries',
   },
 ];
 

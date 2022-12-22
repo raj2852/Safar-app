@@ -13,7 +13,7 @@ export {default as Andhra}from './andh';
 export {default as Telen}from './tel';
 export {default as Madhya}from './madh';
 export {default as Chattis}from './chattis';
-export {default as Orrisa}from './ori';
+export {default as Orissa}from './ori';
 export {default as Jharkhand}from './jh';
 export {default as Bihar}from './bi';
 export {default as Bengal}from './ben';

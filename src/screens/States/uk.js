@@ -132,7 +132,7 @@ const uk = () => {
     <View style={[styles.screen, {marginBottom: 4}]}>
       <ScrollView>
         <View style={styles.screen}>
-          <ImageBackground source={images.andhbanner}>
+          <ImageBackground source={images.ukbanner}>
             <View style={{height: 200, width: Dimensions.get('screen').width}}>
               <Text style={styles.h1}>Uttarakhand</Text>
             </View>
@@ -143,7 +143,7 @@ const uk = () => {
             duration={'7 nights and 8 days'}
             cost={'Within 30,000'}
             months={'Can be visited throughout the year except the peak monsoon season in July and August'}
-            routete={'Dehradun - haridwar - garhwal - Devprayag - Rudraprayag - Tehri - gangotri - Yamunotri - Kedarnath - Badrinath - Chamoli - Almora - Nainital - Pithoragarh - Musoorie'}/>
+            route={'Dehradun - haridwar - garhwal - Devprayag - Rudraprayag - Tehri - gangotri - Yamunotri - Kedarnath - Badrinath - Chamoli - Almora - Nainital - Pithoragarh - Musoorie'}/>
           <Image source={images.uk2} style={styles.img} />
           <View style={styles.about}>
             <Text style={styles.h3}>About Uttarakhand</Text>
@@ -226,7 +226,7 @@ uk.options = {
   topBar: {
     title: {
       text: 'Uttarakhand',
-      color: 'white',
+      color: 'black',
       fontSize: 20,
       fontWeight: '500',
     },

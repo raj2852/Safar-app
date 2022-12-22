@@ -9,16 +9,16 @@ const styles = StyleSheet.create({
     /*justifyContent: 'center',*/
   },
   glasscard: {
-    marginTop: 5,
     width: Dimensions.get('screen').width,
-    height: 200,
-    backgroundColor: 'rgba(255,255,255,0.3)',
-    borderRadius: 10,
+    height: 240,
+    backgroundColor: 'rgba(255,255,255,0.4)',
+    borderBottomLeftRadius: 180,
+    borderBottomRightRadius: 180,
     shadowColor: 'rgba(0,0,0,0.5)',
     borderTopWidth: 1,
-    borderTopColor: 'rgba(255,255,255,0.5)',
+    borderTopColor: 'rgb(255,255,255)',
     borderLeftWidth: 1,
-    borderLeftColor: 'rgba(255,255,255,0.5)',
+    borderLeftColor: 'rgb(255,255,255)',
   },
   carousel: {
     width: '100%',

@@ -219,7 +219,7 @@ Rajasthan.options = {
   topBar: {
     title: {
       text: 'Rajasthan',
-      color: 'white',
+      color: 'black',
       fontSize: 20,
       fontWeight: '500',
     },

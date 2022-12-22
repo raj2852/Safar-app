@@ -13,12 +13,12 @@ const Banner = ({logo, text, bgImage}) => {
         overflow: 'hidden',
       }}>
       <View style={styles.carousel}>
-        <View style={styles.glasscard} blurRadius={5}>
+        <View style={[styles.glasscard,{alignItems: 'center'}]} blurRadius={5}>
           <Image
             source={logo}
             style={{
               marginTop: 15,
-              width: Dimensions.get('screen').width,
+              width: Dimensions.get('screen').width-30,
               height: 150,
             }}
           />

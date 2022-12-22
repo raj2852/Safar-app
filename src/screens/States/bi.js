@@ -69,7 +69,7 @@ const Bihar = () => {
     <View style={[styles.screen, {marginBottom: 4}]}>
       <ScrollView>
         <View style={styles.screen}>
-          <ImageBackground source={images.bibanner}>
+          <ImageBackground source={images.bibanner} resizeMode="cover">
             <View style={{height: 200, width: Dimensions.get('screen').width}}>
               <Text style={styles.h1}>Bihar</Text>
             </View>
@@ -136,7 +136,7 @@ const Bihar = () => {
           showsHorizontalScrollIndicator={false}
           contentContainerStyle={{
             alignItems: 'center',
-            width: '150%',
+            width: '100%',
             justifyContent: 'space-between',
           }}>
           <StateCard
@@ -165,7 +165,7 @@ Bihar.options = {
   topBar: {
     title: {
       text: 'Bihar',
-      color: 'white',
+      color: 'black',
       fontSize: 20,
       fontWeight: '500',
     },

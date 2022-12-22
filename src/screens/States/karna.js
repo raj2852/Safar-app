@@ -254,7 +254,7 @@ Karnataka.options = {
   topBar: {
     title: {
       text: 'Karnataka',
-      color: 'white',
+      color: 'black',
       fontSize: 20,
       fontWeight: '500',
     },

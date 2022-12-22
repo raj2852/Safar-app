@@ -272,7 +272,7 @@ Kerala.options = {
   topBar: {
     title: {
       text: 'Kerala',
-      color: 'white',
+      color: 'black',
       fontSize: 20,
       fontWeight: '500',
     },

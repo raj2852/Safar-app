@@ -117,7 +117,7 @@ const unimportant = [
     <View style={[styles.screen, {marginBottom: 4}]}>
       <ScrollView>
         <View style={styles.screen}>
-          <ImageBackground source={images.andhbanner}>
+          <ImageBackground source={images.upbanner}>
             <View style={{height: 200, width: Dimensions.get('screen').width}}>
               <Text style={styles.h1}>Uttarpradesh</Text>
             </View>
@@ -211,7 +211,7 @@ Up.options = {
   topBar: {
     title: {
       text: 'Uttarpradesh',
-      color: 'white',
+      color: 'black',
       fontSize: 20,
       fontWeight: '500',
     },

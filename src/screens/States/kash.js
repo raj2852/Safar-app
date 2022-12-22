@@ -254,7 +254,7 @@ Kashmir.options = {
   topBar: {
     title: {
       text: 'Kashmir',
-      color: 'white',
+      color: 'black',
       fontSize: 20,
       fontWeight: '500',
     },

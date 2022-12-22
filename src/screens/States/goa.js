@@ -240,7 +240,7 @@ Goa.options = {
   topBar: {
     title: {
       text: 'Goa',
-      color: 'white',
+      color: 'black',
       fontSize: 20,
       fontWeight: '500',
     },

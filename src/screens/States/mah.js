@@ -228,7 +228,7 @@ Maharashtra.options = {
   topBar: {
     title: {
       text: 'Maharashtra',
-      color: 'white',
+      color: 'black',
       fontSize: 20,
       fontWeight: '500',
     },

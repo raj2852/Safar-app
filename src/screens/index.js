@@ -18,7 +18,7 @@ import {
   Telen,
   Jharkhand,
   Chattis,
-  Orrisa,
+  Orissa,
   Bihar,
   Bengal,
   Up,
@@ -54,16 +54,16 @@ export const registerScreen = async () => {
   Navigation.registerComponent('Madhya', () => Madhya);
   Navigation.registerComponent('Jharkhand', () => Jharkhand);
   Navigation.registerComponent('Chattis', () => Chattis);
-  Navigation.registerComponent('Orrisa', () => Orrisa);
+  Navigation.registerComponent('Orissa', () => Orissa);
   Navigation.registerComponent('Bihar', () => Bihar);
   Navigation.registerComponent('Bengal', () => Bengal);
   Navigation.registerComponent('Sikkim', () => Sikkim);
   Navigation.registerComponent('Assam', () => Assam);
   Navigation.registerComponent('Manipur', () => Manipur);
-  Navigation.registerComponent('mizonaga', () => Mizonaga);
+  Navigation.registerComponent('Mizonaga', () => Mizonaga);
   Navigation.registerComponent('Meghalaya', () => Meghalaya);
   Navigation.registerComponent('Tripura', () => Tripura);
-  Navigation.registerComponent('up', () => Up);
-  Navigation.registerComponent('uk', () => Uttarakhand);
-  Navigation.registerComponent('aru', () => Aru);
+  Navigation.registerComponent('Up', () => Up);
+  Navigation.registerComponent('Uttarakhand', () => Uttarakhand);
+  Navigation.registerComponent('Aru', () => Aru);
 };

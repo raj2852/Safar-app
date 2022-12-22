@@ -232,7 +232,7 @@ Andhra.options = {
   topBar: {
     title: {
       text: 'Andhra pradesh',
-      color: 'white',
+      color: 'black',
       fontSize: 20,
       fontWeight: '500',
     },

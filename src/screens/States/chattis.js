@@ -204,7 +204,7 @@ Chattis.options = {
   topBar: {
     title: {
       text: 'Chattisgarh',
-      color: 'white',
+      color: 'black',
       fontSize: 20,
       fontWeight: '500',
     },

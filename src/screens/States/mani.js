@@ -128,7 +128,7 @@ const unimportant = [
           showsHorizontalScrollIndicator={false}
           contentContainerStyle={{
             alignItems: 'center',
-            width: '150%',
+            width: '100%',
             justifyContent: 'space-between',
           }}>
           <StateCard
@@ -157,7 +157,7 @@ Manipur.options = {
   topBar: {
     title: {
       text: 'Manipur',
-      color: 'white',
+      color: 'black',
       fontSize: 20,
       fontWeight: '500',
     },

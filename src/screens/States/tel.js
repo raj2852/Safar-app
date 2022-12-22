@@ -205,7 +205,7 @@ Telen.options = {
   topBar: {
     title: {
       text: 'Telengana',
-      color: 'white',
+      color: 'black',
       fontSize: 20,
       fontWeight: '500',
     },

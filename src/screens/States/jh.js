@@ -125,7 +125,7 @@ const unimportant = [
           showsHorizontalScrollIndicator={false}
           contentContainerStyle={{
             alignItems: 'center',
-            width: '150%',
+            width: '100%',
             justifyContent: 'space-between',
           }}>
           <StateCard
@@ -154,7 +154,7 @@ Jharkhand.options = {
   topBar: {
     title: {
       text: 'Jharkhand',
-      color: 'white',
+      color: 'black',
       fontSize: 20,
       fontWeight: '500',
     },

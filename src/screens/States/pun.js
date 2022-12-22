@@ -450,7 +450,7 @@ Punjab.options = {
   topBar: {
     title: {
       text: 'Punjab',
-      color: 'white',
+      color: 'black',
       fontSize: 20,
       fontWeight: '500',
     },

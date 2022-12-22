@@ -16,7 +16,7 @@ import colors from '../../assets/colors';
 
 //import LinearGradient from 'react-native-linear-gradient';
 
-const Orrisa = () => {
+const Orissa = () => {
   const mustvisit = [
     {
       place:
@@ -196,11 +196,11 @@ const unimportant = [
   );
 };
 
-Orrisa.optiosn = {
+Orissa.options = {
   topBar: {
     title: {
       text: 'Orissa',
-      color: 'white',
+      color: 'black',
       fontSize: 20,
       fontWeight: '500',
     },
@@ -210,4 +210,4 @@ Orrisa.optiosn = {
   },
 };
 
-export default Orrisa;
+export default Orissa;

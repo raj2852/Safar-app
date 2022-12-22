@@ -21,14 +21,15 @@ const Footer = ( {footerHeadline,footerDescription,linkURL,linkText,buttonText,b
         </Text>
         <Text style={styles.footertext}>
           {footerDescription}
-          <Button
+          
+        </Text>
+        <Button
             color="#e33745"
             title={buttonText}
             style={styles.button}
             onPress={() => {
               openPaymentLink(buttonURL);
             }}></Button>
-        </Text>
       </View>
     );
 }

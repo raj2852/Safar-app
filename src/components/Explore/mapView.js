@@ -17,7 +17,7 @@ const MapView = ({}) => {
       }}>
       <WebView
         source={{
-          html: '<iframe width="100%" height="100%" src="https://jsfiddle.net/eb5qmxo7/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>',
+          html: '<iframe width="100%" height="100%" src="https://raj2852.github.io/safar/map.html" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>',
         }}
       />
     </View>

@@ -217,7 +217,7 @@ const unimportant = [
             showsHorizontalScrollIndicator={false}
             contentContainerStyle={{
               alignItems: 'center',
-              width: '150%',
+              width: '100%',
               justifyContent: 'space-between',
             }}>
             <StateCard
@@ -247,7 +247,7 @@ Madhya.options = {
   topBar: {
     title: {
       text: 'Madhya Pradesh',
-      color: 'white',
+      color: 'black',
       fontSize: 20,
       fontWeight: '500',
     },

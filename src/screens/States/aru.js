@@ -98,12 +98,12 @@ const unimportant = [
           route={'Tawang - Kameng - Kurang - Subang - Siang - Dibang - Lohit - Changlang'}/>
           <Image source={images.aru2} style={styles.img} />
           <View style={styles.about}>
-            <Text style={styles.h3}>About Andhra Pradesh</Text>
+            <Text style={styles.h3}>About Arunachal Pradesh</Text>
             <Text style={styles.details}>Arunachal Pradesh, literally "land of dawn-lit mountains" is the northeasternmost state of India. It borders the states of Assam and Nagaland to the south. It shares international borders with Bhutan in the west, Myanmar in the east, and China in the north, with which the border is the McMahon Line. Itanagar is the state capital.</Text>
           </View>
           <Image source={images.aru3} style={styles.img} />
           <View style={styles.places}>
-            <Text style={[styles.screen, {marginBottom: 4}]}>
+            <Text style={[styles.screen,styles.h3, {marginBottom: 4,}]}>
               #Must visit places
             </Text>
 
@@ -124,7 +124,7 @@ const unimportant = [
             </SafeAreaView>
           </View>
           <View style={styles.places}>
-            <Text style={[styles.screen, {marginBottom: 4}]}>
+            <Text style={[styles.screen,styles.h3,  {marginBottom: 4}]}>
               Not so important
             </Text>
 
@@ -180,7 +180,7 @@ Aru.options = {
   topBar: {
     title: {
       text: 'Arunachal Pradesh',
-      color: 'white',
+      color: 'black',
       fontSize: 20,
       fontWeight: '500',
     },

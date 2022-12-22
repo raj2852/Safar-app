@@ -191,7 +191,7 @@ const Explore = props => {
 
 Navigation.setDefaultOptions({
   statusBar: {
-    backgroundColor: '#50807D',
+    backgroundColor: colors.statusColor,
   },
   topBar: {
     title: {
@@ -217,7 +217,8 @@ Explore.options = {
   topBar: {
     title: {
       text: 'Explore',
-      color: 'white',
+      fontWeight: "bold",
+      color: 'black',
     },
     background: {
       color: colors.statusColor,

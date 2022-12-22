@@ -21,7 +21,7 @@ class Home extends Component {
     super(props);
     this.state = {
       profile : 'https://rajdip2852.dscnsec.com',
-      website : 'https://raj2852.github.io/msafar/explore.html', 
+      website : 'https://raj2852.github.io/safar/', 
     }
   }
 
@@ -91,8 +91,10 @@ class Home extends Component {
 Home.options = {
   topBar: {
     title: {
-      text: 'Home',
-      color: 'white',
+      text: 'Safar-App',
+      fontSize: 28,
+      color: 'black',
+      fontWeight: "bold",
     },
     background: {
       color: colors.statusColor,

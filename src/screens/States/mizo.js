@@ -95,13 +95,15 @@ const unimportant = [
       <ScrollView>
         <View style={styles.screen}>
           <ImageBackground source={images.mizobanner}>
-            <View style={{height: 200, width: Dimensions.get('screen').width}}>
+            <View style={{height: 300, width: Dimensions.get('screen').width}}>
               <Text style={styles.h1}>Mizoram and Nagaland</Text>
             </View>
           </ImageBackground>
           <Text style={styles.h2}>Map</Text>
           <Image source={images.mizomap} style={styles.map} />
+          <Text style={{textAlign: 'center', color: '#000'}}>Mizoram Map</Text>
           <Image source={images.nagamap} style={styles.map} />
+          <Text style={{textAlign: 'center', color: '#000'}}>Nagaland Map</Text>
           <TourDetails
             duration={'6 nights and 7 days'}
             cost={'Within 25,000'}
@@ -161,7 +163,7 @@ const unimportant = [
             showsHorizontalScrollIndicator={false}
             contentContainerStyle={{
               alignItems: 'center',
-              width: '180%',
+              width: '220%',
               justifyContent: 'space-between',
             }}>
             <StateCard
@@ -207,7 +209,7 @@ Mizonaga.options = {
   topBar: {
     title: {
       text: 'Mizoram and Nagaland',
-      color: 'white',
+      color: 'black',
       fontSize: 20,
       fontWeight: '500',
     },

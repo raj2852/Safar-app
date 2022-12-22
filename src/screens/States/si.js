@@ -212,7 +212,7 @@ Sikkim.options = {
   topBar: {
     title: {
       text: 'Sikkim',
-      color: 'white',
+      color: 'black',
       fontSize: 20,
       fontWeight: '500',
     },

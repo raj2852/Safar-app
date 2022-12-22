@@ -261,7 +261,7 @@ TamilNadu.options = {
   topBar: {
     title: {
       text: 'Tamil Nadu',
-      color: 'white',
+      color: 'black',
       fontSize: 20,
       fontWeight: '500',
     },
